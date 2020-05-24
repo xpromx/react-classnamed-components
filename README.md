@@ -107,3 +107,18 @@ export default Button
 <button variant="blue" outline>Click Me!</button>
 <button variant="blue" disabled>Click Me!</button>
 ```
+
+# ToDo
+
+- [ ] Write tests
+- [ ] Typescript support
+- [ ] Examples folder of common use cases
+- [ ] Refactor Code
+- [ ] Own implemention of classnames package
+
+## More Examples
+
+- [ ] Tailwindcss
+- [ ] Styled-components
+- [ ] Emotion
+- [ ] CSS modules
