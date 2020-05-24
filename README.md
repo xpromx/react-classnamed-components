@@ -1,4 +1,4 @@
-This package is inspired by `styled-compoments` and `classnames`.
+This package is inspired by `styled-components` and `classnames`.
 
 # Installation
 
@@ -8,9 +8,30 @@ To download `react-classnamed-components` run:
 npm i react-classnamed-components
 ```
 
-# Demo (CodeSanbox)
+# API
 
-Visit this CodeSanbox example, where you can play with the package.
+```js
+import e from 'react-classnamed-components';
+
+// basic
+const Box = e("div")`class-1 class-2`
+
+// with element shortcut
+const Box = e.div`class-1 class-2`
+
+// with classNames condition
+const Box = e.div(props=>["class-1", "class-2",{"class-error": props.hasError}])
+
+// with default attributes/props
+const Input = e.input.attrs({ type: "password" })`class-1 class-2`
+
+// with default attributes + classNames conditions
+const Input = e.input.attrs({type: "password"})(props => ["class-2 class-2], {"class-error": props.hasError}])
+```
+
+# Demo (CodeSandbox)
+
+Visit these CodeSandbox examples, where you can play with the package.
 
 - [with Tailwind CSS](https://codesandbox.io/s/react-tailwind-classnamed-components-t5i3q?file=/src/App.js)
 - [with Tailwind CSS + Styled-components](https://codesandbox.io/s/rcc-with-styled-components-0frwr?file=/src/App.js)
@@ -113,6 +134,7 @@ export default Button
 
 - [ ] Write tests
 - [ ] Typescript support
+- [ ] Typed classnames
 - [ ] Examples folder of common use cases
 - [ ] Refactor Code
 - [ ] Own implemention of classnames package
