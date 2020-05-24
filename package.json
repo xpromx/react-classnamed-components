@@ -1,0 +1,40 @@
+{
+  "name": "react-classnamed-components",
+  "version": "0.1.0",
+  "description": "Create React components easily with classNames",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "babel src --out-dir dist --ignore '**/*.test.js'",
+    "prepare": "npm build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xpromx/react-classnamed-components.git"
+  },
+  "keywords": [
+    "reac",
+    "classnamed",
+    "classnames",
+    "css",
+    "components"
+  ],
+  "author": "xpromx",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xpromx/react-classnamed-components/issues"
+  },
+  "homepage": "https://github.com/xpromx/react-classnamed-components#readme",
+  "dependencies": {
+    "classnames": "^2.2.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-react": "^7.9.4",
+    "jest": "^26.0.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
