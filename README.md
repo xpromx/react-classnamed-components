@@ -12,7 +12,8 @@ npm i react-classnamed-components
 
 Visit this CodeSanbox example, where you can play with the package.
 
-https://codesandbox.io/s/react-tailwind-classnamed-components-t5i3q?file=/src/App.js
+- [with Tailwind CSS](https://codesandbox.io/s/react-tailwind-classnamed-components-t5i3q?file=/src/App.js)
+- [with Tailwind CSS + Styled-components](https://codesandbox.io/s/rcc-with-styled-components-0frwr?file=/src/App.js)
 
 # Getting Started
 
@@ -54,7 +55,7 @@ const Button = e.button(props => ["bg-blue-500 hover:bg-blue-700 text-white font
 <button rounded>Click Me!</button>
 ```
 
-### Button With Color Variants
+## Button With Color Variants
 
 This is a more complex component, where we use props to change the component Colors and States.
 
@@ -116,9 +117,9 @@ export default Button
 - [ ] Refactor Code
 - [ ] Own implemention of classnames package
 
-## More Examples
+#### More Examples
 
-- [ ] Tailwindcss
+- [ ] Tailwind CSS
 - [ ] Styled-components
 - [ ] Emotion
 - [ ] CSS modules
