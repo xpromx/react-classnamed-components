@@ -3,10 +3,14 @@
   "version": "0.1.4",
   "description": "Create React components easily with classNames",
   "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "jest",
-    "build": "babel src --out-dir dist --ignore '**/*.test.js'",
-    "prepare": "npm build"
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -26,15 +30,21 @@
   },
   "homepage": "https://github.com/xpromx/react-classnamed-components#readme",
   "dependencies": {
+    "@emotion/is-prop-valid": "^0.8.8",
     "classnames": "^2.2.6"
   },
   "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.9.6",
-    "@babel/preset-env": "^7.9.6",
-    "@babel/preset-react": "^7.9.4",
-    "jest": "^26.0.1",
+    "@testing-library/jest-dom": "4.2.4",
+    "@testing-library/react": "9.3.2",
+    "@types/classnames": "^2.2.10",
+    "@types/jest": "24.0.23",
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "jest": "24.9.0",
+    "jest-dom": "4.0.0",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "ts-jest": "24.1.0",
+    "typescript": "^3.9.3"
   }
 }
