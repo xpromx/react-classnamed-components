@@ -132,16 +132,16 @@ export default Button
 
 # ToDo
 
-- [ ] Write tests
-- [ ] Typescript support
-- [ ] Typed classnames
-- [ ] Examples folder of common use cases
-- [ ] Refactor Code
+- [x] Write tests
+- [x] Typescript support
+- [x] Forward ref
+- [x] Examples folder of common use cases
+- [x] Refactor Code
 - [ ] Own implemention of classnames package
 
 #### More Examples
 
-- [ ] Tailwind CSS
+- [x] Tailwind CSS
 - [ ] Styled-components
 - [ ] Emotion
 - [ ] CSS modules
