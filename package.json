@@ -1,6 +1,6 @@
 {
   "name": "react-classnamed-components",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Create React components easily with classNames",
   "main": "dist/index.js",
   "files": [
