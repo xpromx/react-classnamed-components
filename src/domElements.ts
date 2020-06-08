@@ -1,4 +1,6 @@
-export default [
+export type DomElement = keyof JSX.IntrinsicElements
+
+export const domElements: DomElement[] = [
   "a",
   "abbr",
   "address",
@@ -63,7 +65,6 @@ export default [
   "main",
   "map",
   "mark",
-  "marquee",
   "menu",
   "menuitem",
   "meta",
